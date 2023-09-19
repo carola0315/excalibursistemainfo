@@ -1,0 +1,601 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ededed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+	text-align: center;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'arial';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	font-family: arial;
+	letter-spacing: 1px;
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+.header{
+	color: #FFF;
+	background: #DC0C15;
+	height: 35px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+nav ul{
+	background: #808B96;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+nav ul > li a{
+	position: relative;
+}
+nav a{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+	border-right: 1px solid #EBF5FB;
+}
+nav .principal > a{
+    background: url(../img/arrow_bottom.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav li ul{
+	/*background: #177470;*/
+	background: #B2BABB;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+nav li ul a{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+nav li ul a:hover{
+	/*background: #2c9595;*/
+	background: #B2BABB;
+}
+nav li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+#container{
+	padding: 90px 15px 15px;
+}
+/*****************************************************************/
+
+.forms_register{
+	width: 500px;
+	margin: auto;
+}
+.forms_register h1{
+	color: black;
+}
+hr{
+	border: 0;
+	background:#7B241C;
+	height: 2px;
+	margin: 5px 0;
+	display: block; 
+}
+form{
+	background: #D6DBDF;
+	margin: auto;
+	padding: 10px 40px;
+	border: 1px solid #7B241C;
+}
+label{
+	display: block;
+	font-size: 13pt;
+	font-family: 'GothamBook';
+	margin: 15px auto 5px auto;
+}
+input, select{
+	display: block;
+	width: 100%;
+	font-size: 10pt;
+	padding: 5px;
+	border: 1px solid #333333;
+	border-radius: 5px;
+}
+
+.notItemOne option:first-child{
+	display: none;
+}
+
+.btn_save{
+	font-size: 12pt;
+	background: #7B7D7D;
+	padding: 10px;
+	color: black;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+	margin: 30px auto 15px auto;
+	display: block;
+	border-radius: 5px;
+}
+.alert{
+	width: 100%;
+	background: whitesmoke;
+	border-radius: 6px;
+	margin: 20px auto;
+}
+.msg_error{
+	color:#DC0C15;
+}
+.msg_save{
+	color:#AED6F1;
+}
+.alert p{
+	padding: 10px;
+}
+
+/* Lista de Usuarios */
+
+#container h1{
+	font-size: 30px;
+	display: inline-block;
+}
+.btn_new{
+	display: inline-block;
+	background: #909497;
+	color:black;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 20px;
+}
+table{
+	border-collapse: collapse;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	width:100%;
+}
+table th{
+	text-align: left;
+	padding: 10px;
+	background: #A6ACAF ;
+	color: #283747;
+}
+
+table tr:nth-child(odd){
+	background: #D6DBDF;
+}
+table td{
+	padding:9px;
+}
+.link_editar{
+	color:#1A237E ;
+}
+.link_eliminar{
+	color:#AD1457 ;
+}
+
+/* FORMULARIO DELETE */
+
+.data_delete h2{
+	font: 14pt;
+	text-align: center;
+}
+.data_delete p{
+	font-weight: bold;
+	font: 13pt;
+	text-align: center;
+}
+.data_delete span{
+	font-weight: bold;
+	color:#311B92;
+	font-size: 12pt;
+}
+.btn_cancel, .btn_aceptar{
+	width: 150px;
+	background: #B2BABB;
+	display: inline-block;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_cancel{
+	background: #34495E;
+	color:white;
+}
+.btn_aceptar{
+	font-size: 12pt;
+	background:#E74C3C;
+	color:white;
+}
+.data_delete form{
+	text-align: center;
+	background: initial;
+	margin: auto;
+	padding: 20px, 50px;
+	border: 0;
+}
+/* +++++++++++++++paginador+++++++++++++++++++++*/
+
+.paginador ul{
+	padding: 7px;
+	list-style: none;
+	background:#ededed;
+	margin-top: 14px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -flex;
+	justify-content: flex-end;
+}
+
+.paginador a, pageSelected{
+	color: black;
+	border: 1px solid #ddd;
+	padding: 7px;
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 26px;
+}
+
+.paginador a:hover{
+	background:#7B7D7D;
+}
+.pageSelected{
+	color: #FFF;
+	background: #CCD1D1;
+	border: 1px solid #566573;
+}
+
+/********* buscardor ************/
+.buscador{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.form_search, .btn_search{
+	background: #B3B6B7;
+	color: black;
+	padding: 0 20px;
+	border: 0;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+/***********************VENTAS*************/
+
+.datos_cliente, .datos, .title_page {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+#detalle_cotizacion tr{
+	background-color: #FFF;
+}
+#detalle_cotizacion td{
+	border-bottom: 1px solid #CCC;
+}
+.datos{
+	background-color: #e3ecef;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_cliente{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+.datos label{
+	margin: 5px auto;
+}
+.wd20{
+	width: 20%;
+}
+.wd25{
+	width: 25%;
+}
+.wd30{
+	width: 30%;
+}
+.wd40{
+	width: 40%;
+}
+.wd60{
+	width: 60%;
+}
+.wd100{
+	width: 100%;
+}
+#div_registro_cliente, #add_producto_cotizacion{
+	display: none;
+}
+.displayN{
+	display: none;
+}
+.tbl_venta{
+	max-width: 900px;
+	margin: auto;
+}
+.tbl_venta tfoot td{
+	font-weight: bold;
+}
+.textright{
+	text-align: right;
+}
+.textcenter{
+	text-align: center;
+}
+.textleft{
+	text-align: left;
+}
+.btn_anular_cotizacion{
+	background-color: #f36a6a;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #FFF;
+}
+
+/* Buscador fecha */
+
+.form_search_date{
+	padding: 10px;
+	display: flex;
+	justify-content:flex-start;
+	align-items:center;
+	border-radius: 10px;
+	margin: 10px auto;
+}
+.form_search_date label{
+	margin: 0 10px;
+} 
+.form_search_date input{
+	width: auto;
+}
+.form_search_date btn_view{
+	padding: 8px;
+}
+.btn_view{
+	background-color: #D7DBDD;
+	border: 0;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 0 3px;
+	color: #2C3E50;
+}
+.div_acciones{
+	display: -webrik-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: o-flex;
+	display: flex;
+	justify-content: center;
+}
+.total_cotizacion{
+	display: -webrik-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.negada{
+	color:#FFF;
+	background: #c60900;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+.aprobada{
+	color:#FFF;
+	background: #05a700 ;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+.pendiente{
+	color:#000000;
+	background: #B3B6B7;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+
+.ejecucion{
+	color:#000000;
+	background: #ffa253;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+.xejecutar{
+	color:#000000;
+	background: #FFBE33;
+	text-align: center;
+	border-radius: 5px;
+	padding: 4px 15px;
+}
+.inactive{
+	background-color: #ECEFF1;
+	color: #ccc;
+	cursor: default;
+}
+
+
+
+/*editar cotizacion*/
+
+.logo_cotizacion{
+	width: 35%;
+	text-align: center;
+}
+.info_empresa td {
+	width: 80%;
+	text-align: center;
+}
+
+/* ESTILOS ORDEN DE SERVICIO*/
+
+.observaciones{
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.modal{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0, 0.5) !important;
+	opacity: 0.9;
+	display: none;
+}
+
+.bodyModal{
+	width: 100%;
+	height: 100%;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: #FFF;
+}
+
+.modal h1{
+	text-transform: uppercase;
+}
+
+.modal h2{
+	color: #454545;
+	text-transform: uppercase;
+}
+
+#legalizacion{
+	width: 450px;
+	text-align: center; 
+}

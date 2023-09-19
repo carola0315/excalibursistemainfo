@@ -1,0 +1,135 @@
+@import url('fonts/BrixSansRegular.css');
+@import url('fonts/BrixSansBlack.css');
+
+*{
+	margin: 10;
+	padding: 10;
+	box-sizing: border-box;
+}
+p, label, span, table{
+	font-family: 'BrixSansRegular';
+	font-size: 9pt;
+}
+.h2{
+	font-family: 'BrixSansBlack';
+	font-size: 16pt;
+}
+.h3{
+	font-family: 'BrixSansBlack';
+	font-size: 12pt;
+	display: block;
+	background: #DC0C15;
+	color: #FFF;
+	text-align: center;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+#page_pdf{
+	width: 95%;
+	margin: 15px auto 10px auto;
+}
+
+#cotizacion_head, #cotizacion_cliente, #cotizacion_detalle{
+	width: 100%;
+	margin-bottom: 10px;
+}
+.logo_cotizacion{
+	width: 35%;
+}
+.info_empresa{
+	width: 80%;
+	text-align: center;
+}
+.info_cotizacion{
+	width: 40%;
+}
+.info_cliente{
+	width: 50%;
+}
+.datos_cliente{
+	width: 100%;
+}
+.datos_cliente tr td{
+	width: 50%;
+}
+.datos_cliente{
+	padding: 10px 10px 0 10px;
+}
+.datos_cliente label{
+	width: 75px;
+	display: inline-block;
+}
+.datos_cliente p{
+	display: inline-block;
+}
+
+.textright{
+	text-align: right;
+}
+.textleft{
+	text-align: left;
+}
+.textcenter{
+	text-align: center;
+}
+.round{
+	border-radius: 10px;
+	border: 1px solid #808B96;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+.round p{
+	padding: 0 15px;
+}
+
+#cotizacion_detalle{
+	border-collapse: collapse;
+}
+#cotizacion_detalle thead th{
+	background: #DC0C15;
+	color: #f5f7f8;
+	padding: 5px;
+}
+#detalle_productos tr:nth-child(even) {
+    background: #7B7D7D;
+}
+#detalle_totales span{
+	font-family: 'BrixSansBlack';
+}
+.nota{
+	font-size: 8pt;
+}
+.label_gracias{
+	font-family: verdana;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	margin-top: 20px;
+}
+.Negada{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+.btn_new{
+	display: inline-block;
+	background: #909497;
+	color:black;
+	padding: 10px 45px;
+	border-radius: 4px;
+	margin: 20px;
+}
+
+#add_producto_editar{
+	display: none;
+}
+
+#detalle_cotizacion_editar tr{
+	background-color: #FFF;
+}
+#detalle_cotizacion_editar td{
+	border-bottom: 1px solid #CCC;
+}
+
+
